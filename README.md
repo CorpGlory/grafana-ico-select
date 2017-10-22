@@ -7,9 +7,9 @@ Grafana already has [many icons inside](https://github.com/CorpGlory/grafana-ico
 
 It is proposition "icon-select" feature for Grafana. It supposed to be a new directive or something else.
 
-*It is not possible to install to Grafana directly now.* The repo mostly for developers.
+*It is not possible to install to Grafana directly now.* The repo mostly for developers. [*Before really code anything, I want to ask question to community*](#questions-to-community)
 
-###### *Before really code anything, I want to ask*
+
 ## Questions to community
 1. Would you use it and how?
 2. How to distribute? 
