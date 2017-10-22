@@ -7,6 +7,7 @@ Only for demo purposes.
 1. How to distribute? 
    * Contibute to the main project?
    * Create "app"? 
+   * Remove code duplication with `query_part_editor.ts` (extract typeahead feature?)
 2. Help me to write nice Angular directive: Model & etc
 
   
