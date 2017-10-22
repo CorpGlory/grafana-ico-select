@@ -18,5 +18,6 @@ Before really code anything, [*I want to ask questions to community*](#questions
    * Create "app"? 
    * Remove code duplication with `query_part_editor.ts` (extract typeahead feature?)
 3. Help me to write nice Angular directive: Model & etc
+4. UI/UX suggestions
 
   
