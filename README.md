@@ -19,6 +19,8 @@ Before really code anything, [*I want to ask questions to community*](#questions
    * Remove code duplication with `query_part_editor.ts` (extract typeahead feature?)
 3. Help me to write nice Angular directive: Model & etc
 4. UI/UX suggestions
-5. Create a roadmap if we decide to make it
+5. Performance optimizations: the list is really big
+   * Create selection list dom element only once?
+6. Create a roadmap if we decide to make it
    * create a ploygon for testing
    * collect requirements
