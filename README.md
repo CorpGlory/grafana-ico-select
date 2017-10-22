@@ -11,11 +11,11 @@ It is proposition "icon-select" feature for Grafana. It supposed to be a new dir
 
 ###### *Before really code anything, I want to ask*
 ## Questions to community
-
-1. How to distribute? 
+1. Would you use it and how?
+2. How to distribute? 
    * Contibute to the main project?
    * Create "app"? 
    * Remove code duplication with `query_part_editor.ts` (extract typeahead feature?)
-2. Help me to write nice Angular directive: Model & etc
+3. Help me to write nice Angular directive: Model & etc
 
   
