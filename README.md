@@ -1,9 +1,9 @@
 # Grafana icon select
 A demo of "ico-select" feature for Grafana. It supposed to be a new directive or something else.
 
-*It is not possible to install to Grafana directly now*
+*It is not possible to install to Grafana directly now.*
 
-It's a repo for developers. 
+The repo mostly for developers.
 
 ## Questions to community
 
