@@ -5,5 +5,8 @@ Only for demo purposes.
 ## Questions to community
 
 1. How to distribute? 
-   Contibute to the main project?
-   Create "app"
+   * Contibute to the main project?
+   * Create "app"? 
+2. Help me to write nice Angular directive: Model & etc
+
+  
