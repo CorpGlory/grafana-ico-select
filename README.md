@@ -6,9 +6,7 @@ Sometimes you want to use icon simmilar as you set/map colors/names in your plug
 
 It is proposition "icon-select" feature for Grafana. It supposed to be a new directive or something else.
 
-*It is not possible to install to Grafana directly now.*
-
-The repo mostly for developers.
+*It is not possible to install to Grafana directly now.* The repo mostly for developers.
 
 
 ###### *Before really code anything, I want to ask*
