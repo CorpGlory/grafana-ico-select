@@ -22,7 +22,7 @@ In "normal" state user see icon and it's name:
 />
 
 ### Input begin
-When users click to input, it removes it's content and opens selection box with all possible icons:
+When user clicks to input, it removes it`s content and opens a selection box with all possible icons:
 
 <img 
   width="277" alt="select" 
