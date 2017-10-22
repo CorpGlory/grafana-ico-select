@@ -5,6 +5,8 @@ A demo of "ico-select" feature for Grafana. It supposed to be a new directive or
 
 The repo mostly for developers.
 
+
+###### *Before really code anything, I want to ask*
 ## Questions to community
 
 1. How to distribute? 
