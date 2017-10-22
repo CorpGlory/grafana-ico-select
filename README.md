@@ -10,6 +10,16 @@ It is proposition "icon-select" feature for Grafana. It supposed to be a new dir
 *It is not possible to install to Grafana directly now.* The repo mostly for developers. 
 Before really code anything, [*I want to ask questions to community*](#questions-to-community)
 
+## Prototype
+
+### Input begin
+When users click to input, it removes it's content and opens selection box with all possible icons:
+
+<img 
+  width="277" alt="select" 
+  src="https://user-images.githubusercontent.com/1022757/31864402-71efcd0c-b765-11e7-97d3-f77093686804.png"
+>
+
 
 ## Questions to community
 1. Would you use it and how?
