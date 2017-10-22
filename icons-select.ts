@@ -40,12 +40,12 @@ const styles = `
 const htmlTemplateSelected = styles + `
 <div class='icon-select'>
   <i class="fa fa-clock-o"></i>
-  <input 
-    type="text" 
-    class="gf-form-input ng-valid ng-empty ng-dirty ng-valid-parse ng-touched" 
-    empty-to-null="" 
-    ng-model="'fa-clock-o'" 
-    ng-change="ctrl.render()" 
+  <input
+    type="text"
+    class="gf-form-input ng-valid ng-empty ng-dirty ng-valid-parse ng-touched"
+    empty-to-null=""
+    ng-model="'fa-clock-o'"
+    ng-change="ctrl.render()"
     ng-model-onblur=""
   />
 </div>
@@ -53,20 +53,43 @@ const htmlTemplateSelected = styles + `
 
 const htmlTemplateSelect = styles + `
 <div class='icon-select'>
-  <input 
-    type="text" 
-    class="gf-form-input ng-valid ng-empty ng-dirty ng-valid-parse ng-touched" 
+  <input
+    type="text"
+    class="gf-form-input ng-valid ng-empty ng-dirty ng-valid-parse ng-touched"
     empty-to-null=""
     ng-model=""
     placeholder="icon name"
-    ng-change="ctrl.render()" 
+    ng-change="ctrl.render()"
   />
   <span class="query-part-parameters">
     <ul class="typeahead dropdown-menu" style="top: 35px; left: 0px; display: block; width: 194px">
-      <li ng-repeat="icon in options"> 
-        <a href="#"> 
-          <i class="fa {{ icon }}"></i> 
+      <li ng-repeat="icon in options">
+        <a href="#">
+          <i class="fa {{ icon }}"></i>
           {{ icon }}
+        </a>
+      </li>
+    </ul>
+  </span>
+</div>
+`;
+
+const htmlTemplateFiltered = styles + `
+<div class='icon-select'>
+  <input
+    type="text"
+    class="gf-form-input ng-valid ng-empty ng-dirty ng-valid-parse ng-touched"
+    empty-to-null=""
+    ng-model="filter"
+    placeholder="icon name"
+    ng-change="ctrl.render()"
+  />
+  <span class="query-part-parameters">
+    <ul class="typeahead dropdown-menu" style="top: 35px; left: 0px; display: block; width: 194px">
+      <li ng-repeat="icon in filteredOptions">
+        <a href="#">
+          <i class="fa {{ icon.name }}"></i>
+          {{ icon.prefix }}<strong>{{ filter }}</strong>{{ icon.sufix }}
         </a>
       </li>
     </ul>
@@ -78,12 +101,32 @@ const htmlTemplateSelect = styles + `
 coreModule
   .directive('iconSelect', function() {
     return {
-      template: htmlTemplateSelect,
+      template: htmlTemplateFiltered,
       restrict: 'E',
       scope: true,
       link: function(scope, element, attrs) {
         scope.options = ICONS_LIST;
         scope.myValue = "asd";
+        scope.filter = "des";
+
+        function getFilteredOptions() {
+          var res: any[] = [];
+          for(var i = 0; i < ICONS_LIST.length; i++) {
+            var index = ICONS_LIST[i].indexOf(scope.filter);
+            if(index < 0) {
+              continue;
+            }
+            res.push({
+              name: ICONS_LIST[i],
+              prefix: ICONS_LIST[i].substr(0, index),
+              suffix: ICONS_LIST[i].substr(index + 1 + scope.filter.length)
+            });
+          }
+          return res;
+        }
+
+        scope.filteredOptions = getFilteredOptions();
+
       }
     };
   });
