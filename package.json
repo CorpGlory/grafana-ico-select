@@ -1,0 +1,27 @@
+{
+  "name": "grafana-icon",
+  "version": "0.0.1",
+  "description": "Icon elements for Grafana: editor and renderer",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorpGlory/grafana-icon"
+  },
+  "keywords": [
+    "grafana",
+    "ui",
+    "icon"
+  ],
+  "author": "Alexey Velikiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CorpGlory/grafana-icon"
+  },
+  "homepage": "https://github.com/CorpGlory/grafana-icon#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
