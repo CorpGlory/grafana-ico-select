@@ -1,7 +1,10 @@
 # Grafana icon
 
 ## Abstract
-This module contains several AngularJS directives for adding icon to your plugin:
+
+The module gives a way to render and edit icons in your Grafana pluging.
+It is distributed via AngularJS directives.
+
 ### Icon
 Directive for showing icon on your page. 
 It adds div with customizable:
@@ -12,7 +15,8 @@ It adds div with customizable:
 * icon color
 * visibility
 
-Main feature is icon scalability.
+
+Icon would try to scale to parent block.
 
 Icon size is given as % of div height. If icon is too wide - it would scale to fit div.
 ### Icon editor
